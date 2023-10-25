@@ -16,10 +16,10 @@ int main() {
     int year;
     cout<<"Enter year: ";
     cin>>year;
-    if(year%400 == 0){
+    if(year%400 == 0 && year%100!=0){
         cout<<year<<" is a leap year"<<endl;
     }
-    else if(year%4 == 0){
+    else if(year%4 == 0 && year%100!=0){
         cout<<year<<" is a leap year"<<endl;
     }
     else if(year%100 == 0){
